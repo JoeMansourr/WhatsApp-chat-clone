@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.app-header{
+    background-color: #075c55;
+    display: flex;
+}
+
+.avatar img{
+    width: 100%;
+    max-width: 35px;
+    border-radius: 50%;
+    margin: 0.4em auto;
+    cursor: pointer;
+}
+
+i{
+    color: #fff;
+    padding: 1em 0.7em;
+    cursor: pointer;
+}
+
+.contact-info h4{
+    color: #fff;
+    padding: 0.6em 0.6em 0 0.6em;
+    cursor: pointer;
+}
+
+.contact-info h6{
+    color: #fff;
+    padding-left: 0.8em;
+    cursor: pointer;
+}
+
+aside{
+    position: absolute;
+    right: 10px;
+}
+
+.date{
+    background-color: #d4eaf4;
+    width: 9em;
+    height: 1.5em;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 2em auto;
+}
+
+.app-footer i{
+    color: #000;
+}
+
+.inputText{
+    border-radius: 40px;
+    outline: none;
+    padding: 0 1.5em;
+    border: none;
+    max-height: 40px;
+
+}
+
+.app-footer{
+    background-color: #fff;
+    width: 100%;
+    /* max-width: 355px; */
+    position: fixed;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+}
+
+.messages{
+    max-width: 130px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 1.2em;
+    border-top-left-radius: 5px;
+}
+
+
+.messages::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: -2px;
+    left: -8px;
+    transform: rotate(20deg);
+}
+
+.myMessages{
+    max-width: 255px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    background-color: #00826a;
+    color: #fff;
+    margin-right: 1.2em;
+}
+
+.myMessages::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #00826a;
+    border-top: 5px solid #00826a;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    transform: rotate(132deg);
+}
+
+.message{
+    margin-bottom: 2em;
+}
+
+.info{
+    display: block;
+}
+
+.hide{
+    /* visibility: hidden; */
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: .3rem;
+    border-radius: .5rem;
+    background-color: hsl(79, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(79, 4%, 25%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(79, 4%, 35%);
+}
