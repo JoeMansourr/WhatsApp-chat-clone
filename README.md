@@ -1,2 +1,2 @@
-# whatsapp-chat-clone
-WhatsApp Chat Clone using HTML/CSS/JS
+By visiting the following link, you can access my WhatsApp Chat Clone Project:
+https://joemansourr.github.io/whatsapp-chat-clone/
